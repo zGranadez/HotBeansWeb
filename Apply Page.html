@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for the Position</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Introduction</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="meet our team.html">Meet Our Team</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="Apply Page.html">Apply For A Position</a>
+                    <a href="meet our trainees.html">Meet Our Trainees</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <h1>Apply for the Position</h1>
+        <form id="application-form" class="application-form-class" method="get" action="thank-you.html">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select a position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Fullstack Developer</option>
+                    <option value="designer">UI/UX Designer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+            <div class="form-group">
+                <label for="coverletter">Cover Letter:</label>
+                <textarea id="coverletter" name="coverletter" rows="6" required></textarea>
+            </div>
+            <button type="submit" formaction="thank-you.html">Submit Application</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hot Beans Web Development</p>
+    </footer>
+</body>
+</html>
